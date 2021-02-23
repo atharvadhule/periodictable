@@ -13,7 +13,7 @@ function displayEle() {
         // displaying in ui
         eleData.forEach((element, index) => {
             html = `
-            <h7 class="list-group-item list-group-item-action list-group-item-dark mt-2" onclick='display(this.id)' id='${index}'>${index+1}:-  ${element.name} </h7>
+            <h7 class="list-group-item list-group-item-action list-group-item-dark mt-2" onclick='display(this.id)' id='${index}'>${index+1}.  ${element.name} </h7>
             `;
             ele.innerHTML += html;
         });
