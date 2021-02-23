@@ -4,7 +4,7 @@ displayEle()
 function displayEle() {
     //xhr request
     let xhr = new XMLHttpRequest();
-    xhr.open("GET", "../data/PeriodicTableJSON.json", true);
+    xhr.open("GET", "data/PeriodicTableJSON.json", true);
     xhr.onload = function () {
         let data = JSON.parse(this.responseText);
         let eleData = data.elements;
@@ -26,7 +26,7 @@ function display(clicked_id) {
     let xhhr = new XMLHttpRequest();
   document.getElementById("ele").style.display = "none";
 //   document.getElementById("eleName").style.display = "block";
-  xhhr.open("GET", "../data/PeriodicTableJSON.json", true);
+  xhhr.open("GET", "data/PeriodicTableJSON.json", true);
   xhhr.onload = function () {
     const data = JSON.parse(this.responseText);
 
